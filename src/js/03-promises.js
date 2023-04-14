@@ -29,7 +29,6 @@ form.addEventListener('submit', (e) => {
     const promiseDelay = delay + (i - 1) * step; // Застосовуємо крок для кожного наступного промісу
     // console.log('promiseDelay', promiseDelay)
 
-
     createPromise(position, promiseDelay)
       .then(({ position, delay }) => {
         // console.log('delay', delay)
